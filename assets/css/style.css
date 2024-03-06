@@ -6,13 +6,14 @@
 
 main {
     display: block;
+    background-color: #F0FFFF;
 }
 
 header  { 
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: grey;
+    background-color: #F0FFFF;
     }
 
 header a {
@@ -26,7 +27,7 @@ ul {
 }
 
 h1 {
-    color: azure; 
+    color: black; 
 }
 
 h2 {
@@ -42,10 +43,8 @@ p {
 }
 
 a {
-    color: azure;
+    color: black;
 }
-
-
 
 nav {
     display: flex;
@@ -58,6 +57,7 @@ section {
     
 }
 
+/* This is the start of the code for the section of the website right below the header */
 .hero{
     position: relative;
 }
@@ -75,55 +75,91 @@ section {
     color: azure;
 }
 
-.card {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.card img {
-    width: 200px;
-    padding-left: 25vw;
-    padding-right: 25vw;
-}
-
-.about {
+/* This is the start of the code for the "About Me" section of the website. */
+#about {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to top right, red, yellow);
+}
+
+.about-text {
+    margin-left: 5vw;
 }
 
 #about-p {
     display: flex;
 }
 
-.work {
+/* This is the start of the code for the "Work" section of the website. */
+#work {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    justify-content: space-around;
 }
 
-.contact {
+.work-text {
+    margin-left: 5vw;
+}
+
+.websites {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#demo-site-label {
+    position: relative;
+    right: 402.8px;
+    bottom: -94px;
+    background-color: #F0FFFF;
+    user-select: none;
+}
+
+#placeholder1-label {
+    position: relative;
+    right: 402.8px;
+    bottom: -94px;
+    background-color: #F0FFFF;
+    user-select: none;
+}
+
+#placeholder2-label {
+    position: relative;
+    right: 402.8px;
+    bottom: -94px;
+    background-color: #F0FFFF;
+    user-select: none;
+}
+
+#placeholder3-label {
+    position: relative;
+    right: 402.8px;
+    bottom: -94px;
+    background-color: #F0FFFF;
+    user-select: none;
+}
+
+.card img {
+    border: 3px solid black;
+    width: 400px;
+}
+
+/* This is the start of the code for the "Contact Me" section of the website. */
+#contact {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top right, red, yellow);
 }
 
-.contact a {
+#contact a {
     padding: 5px;
 }
 
-/*#demo-site:hover::after {
-    content: "An example of refactored HTML";
-    color: black;
-    left: 0px;
-    bottom: 24px;
-    min-width: 200px;
-    font-size: 80%;
-    position: absolute;
-    z-index: 1;
-}*/
+.contact-text {
+    margin-left: 5vw;
+}
 
